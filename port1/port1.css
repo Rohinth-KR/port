@@ -1,0 +1,111 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0cff00; /* Neon green text color */
+    background-image: url('./mypic.png'); /* Add your cyber background image path here */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: rgba(80, 86, 152, 0.801); /* Removed semi-transparent white background for header */
+    color: #0cff00; /* Neon green text color */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #0cff00; /* Neon green text color */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transition */
+}
+
+nav ul li a:hover {
+    color: #ff00ff; /* Neon magenta on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+section {
+    padding: 50px 0;
+    background-color: ; /* Semi-transparent yellow background */
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0cff00; /* Neon green heading */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.project {
+    background-color: #f0f0f0; /* Light gray background for projects */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect on hover */
+}
+
+footer {
+    background-color: rgb(20, 19, 19); /* Removed semi-transparent white background for footer */
+    color: #0cff00; /* Neon green text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+}
